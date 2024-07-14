@@ -21,5 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ComposeUI"
 include(":app")
-include(":bottomnavigationwithpager")
-include(":navigation")
+include(":basiclayout")
