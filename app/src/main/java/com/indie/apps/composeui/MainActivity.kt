@@ -18,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.indie.apps.basicanimation.BasicAnimationMainActivity
 import com.indie.apps.basiclayout.BasicLayoutMainActivity
 import com.indie.apps.composeui.ui.theme.ComposeUITheme
 
@@ -35,7 +36,8 @@ class MainActivity : ComponentActivity() {
                     ) {
                         Column{
                             SimpleButton("Basic Layout"){
-                                val intent = Intent(this@MainActivity, BasicLayoutMainActivity::class.java)
+                                //val intent = Intent(this@MainActivity, BasicLayoutMainActivity::class.java)
+                                val intent = Intent(this@MainActivity, BasicAnimationMainActivity::class.java)
                                 startActivity(intent)
                             }
                         }

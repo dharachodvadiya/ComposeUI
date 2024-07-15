@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "ComposeUI"
 include(":app")
 include(":basiclayout")
+include(":basicanimation")
