@@ -19,7 +19,7 @@ class JetSurveyMainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            WelcomeScreen({},{})
+            JetsurveyNavHost()
         }
     }
 }

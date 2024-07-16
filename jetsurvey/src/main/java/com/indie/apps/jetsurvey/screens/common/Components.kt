@@ -1,4 +1,4 @@
-package com.indie.apps.jetsurvey.screens
+package com.indie.apps.jetsurvey.screens.common
 
 import androidx.annotation.StringRes
 import androidx.compose.material3.Button
