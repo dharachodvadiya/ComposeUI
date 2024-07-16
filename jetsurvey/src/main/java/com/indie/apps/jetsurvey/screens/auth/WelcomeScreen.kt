@@ -59,7 +59,7 @@ private fun SignInCreateAccount(
     modifier: Modifier = Modifier
 ){
     val emailState by rememberSaveable(stateSaver = EmailStateSaver) {
-        mutableStateOf(EmailState("aaa@aaa.com"))
+        mutableStateOf(EmailState("signup@aaa.com"))
     }
 
     Column(

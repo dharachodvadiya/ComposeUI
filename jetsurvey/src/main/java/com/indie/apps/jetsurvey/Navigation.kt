@@ -22,9 +22,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.indie.apps.jetsurvey.Destinations.SIGN_IN_ROUTE
+import com.indie.apps.jetsurvey.Destinations.SIGN_UP_ROUTE
 import com.indie.apps.jetsurvey.Destinations.SURVEY_ROUTE
 import com.indie.apps.jetsurvey.Destinations.WELCOME_ROUTE
 import com.indie.apps.jetsurvey.screens.route.SignInRoute
+import com.indie.apps.jetsurvey.screens.route.SignUpRoute
 import com.indie.apps.jetsurvey.screens.route.WelcomeRoute
 
 object Destinations {
@@ -71,19 +73,19 @@ internal fun JetsurveyNavHost(
             )
         }
 
-       /* composable(SIGN_UP_ROUTE) {
+        composable(SIGN_UP_ROUTE) {
             val startingEmail = it.arguments?.getString("email")
             SignUpRoute(
                 email = startingEmail,
                 onSignUpSubmitted = {
-                    navController.navigate(SURVEY_ROUTE)
+                    //navController.navigate(SURVEY_ROUTE)
                 },
                 onSignInAsGuest = {
-                    navController.navigate(SURVEY_ROUTE)
+                    //navController.navigate(SURVEY_ROUTE)
                 },
                 onNavUp = navController::navigateUp,
             )
-        }*/
+        }
 
         /*composable(SURVEY_ROUTE) {
             SurveyRoute(
