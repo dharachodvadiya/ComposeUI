@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import com.indie.apps.basicanimation.BasicAnimationMainActivity
 import com.indie.apps.basiclayout.BasicLayoutMainActivity
 import com.indie.apps.composeui.ui.theme.ComposeUITheme
+import com.indie.apps.jetsurvey.JetSurveyMainActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
                         Column{
                             SimpleButton("Basic Layout"){
                                 //val intent = Intent(this@MainActivity, BasicLayoutMainActivity::class.java)
-                                val intent = Intent(this@MainActivity, BasicAnimationMainActivity::class.java)
+                                val intent = Intent(this@MainActivity, JetSurveyMainActivity::class.java)
                                 startActivity(intent)
                             }
                         }

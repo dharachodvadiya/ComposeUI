@@ -1,18 +1,14 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.indie.apps.composeui"
+    namespace = "com.indie.apps.jetsurvey"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.indie.apps.composeui"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -59,9 +55,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(project(":basiclayout"))
-    implementation(project(":basicanimation"))
-    implementation(project(":jetsurvey"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/basicanimation" />
             <option value="$PROJECT_DIR$/basiclayout" />
+            <option value="$PROJECT_DIR$/jetsurvey" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

@@ -23,3 +23,4 @@ rootProject.name = "ComposeUI"
 include(":app")
 include(":basiclayout")
 include(":basicanimation")
+include(":jetsurvey")
