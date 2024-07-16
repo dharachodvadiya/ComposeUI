@@ -113,7 +113,7 @@ fun SurveyResultScreen(
                     onClick = onDonePressed,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 20.dp, vertical = 24.dp)
+                        .padding(horizontal = 20.dp, vertical = 44.dp)
                 ) {
                     Text(text = stringResource(id = R.string.done))
                 }

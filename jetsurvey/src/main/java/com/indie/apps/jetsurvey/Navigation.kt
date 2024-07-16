@@ -23,12 +23,14 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.indie.apps.jetsurvey.Destinations.SIGN_IN_ROUTE
 import com.indie.apps.jetsurvey.Destinations.SIGN_UP_ROUTE
+import com.indie.apps.jetsurvey.Destinations.SURVEY_RESULTS_ROUTE
 import com.indie.apps.jetsurvey.Destinations.SURVEY_ROUTE
 import com.indie.apps.jetsurvey.Destinations.WELCOME_ROUTE
 import com.indie.apps.jetsurvey.screens.route.SignInRoute
 import com.indie.apps.jetsurvey.screens.route.SignUpRoute
 import com.indie.apps.jetsurvey.screens.route.SurveyRoute
 import com.indie.apps.jetsurvey.screens.route.WelcomeRoute
+import com.indie.apps.jetsurvey.screens.screen.SurveyResultScreen
 
 object Destinations {
     const val WELCOME_ROUTE = "welcome"
@@ -91,15 +93,15 @@ internal fun JetsurveyNavHost(
         composable(SURVEY_ROUTE) {
             SurveyRoute(
                 onSurveyComplete = {
-                    //navController.navigate(SURVEY_RESULTS_ROUTE)
+                    navController.navigate(SURVEY_RESULTS_ROUTE)
                 },
                 onNavUp = navController::navigateUp,
             )
         }
-       /* composable(SURVEY_RESULTS_ROUTE) {
+        composable(SURVEY_RESULTS_ROUTE) {
             SurveyResultScreen {
                 navController.popBackStack(WELCOME_ROUTE, false)
             }
-        }*/
+        }
     }
 }
