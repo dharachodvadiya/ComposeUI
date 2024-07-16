@@ -27,6 +27,7 @@ import com.indie.apps.jetsurvey.Destinations.SURVEY_ROUTE
 import com.indie.apps.jetsurvey.Destinations.WELCOME_ROUTE
 import com.indie.apps.jetsurvey.screens.route.SignInRoute
 import com.indie.apps.jetsurvey.screens.route.SignUpRoute
+import com.indie.apps.jetsurvey.screens.route.SurveyRoute
 import com.indie.apps.jetsurvey.screens.route.WelcomeRoute
 
 object Destinations {
@@ -54,7 +55,7 @@ internal fun JetsurveyNavHost(
                     navController.navigate("signup/$it")
                 },
                 onSignInAsGuest = {
-                    //navController.navigate(SURVEY_ROUTE)
+                    navController.navigate(SURVEY_ROUTE)
                 },
             )
         }
@@ -64,10 +65,10 @@ internal fun JetsurveyNavHost(
             SignInRoute(
                 email = startingEmail,
                 onSignInSubmitted = {
-                    //navController.navigate(SURVEY_ROUTE)
+                    navController.navigate(SURVEY_ROUTE)
                 },
                 onSignInAsGuest = {
-                    //navController.navigate(SURVEY_ROUTE)
+                    navController.navigate(SURVEY_ROUTE)
                 },
                 onNavUp = navController::navigateUp,
             )
@@ -78,24 +79,23 @@ internal fun JetsurveyNavHost(
             SignUpRoute(
                 email = startingEmail,
                 onSignUpSubmitted = {
-                    //navController.navigate(SURVEY_ROUTE)
+                    navController.navigate(SURVEY_ROUTE)
                 },
                 onSignInAsGuest = {
-                    //navController.navigate(SURVEY_ROUTE)
+                    navController.navigate(SURVEY_ROUTE)
                 },
                 onNavUp = navController::navigateUp,
             )
         }
 
-        /*composable(SURVEY_ROUTE) {
+        composable(SURVEY_ROUTE) {
             SurveyRoute(
                 onSurveyComplete = {
-                    navController.navigate(SURVEY_RESULTS_ROUTE)
+                    //navController.navigate(SURVEY_RESULTS_ROUTE)
                 },
                 onNavUp = navController::navigateUp,
             )
         }
-*/
        /* composable(SURVEY_RESULTS_ROUTE) {
             SurveyResultScreen {
                 navController.popBackStack(WELCOME_ROUTE, false)

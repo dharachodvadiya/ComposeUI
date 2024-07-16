@@ -18,7 +18,7 @@ package com.indie.apps.jetsurvey.screens.route
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.indie.apps.jetsurvey.screens.auth.SignInScreen
+import com.indie.apps.jetsurvey.screens.screen.SignInScreen
 import com.indie.apps.jetsurvey.screens.viewmodel.SignInViewModel
 import com.indie.apps.jetsurvey.screens.viewmodel.SignInViewModelFactory
 

@@ -18,7 +18,7 @@ package com.indie.apps.jetsurvey.screens.route
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.indie.apps.jetsurvey.screens.auth.WelcomeScreen
+import com.indie.apps.jetsurvey.screens.screen.WelcomeScreen
 import com.indie.apps.jetsurvey.screens.viewmodel.WelcomeViewModel
 import com.indie.apps.jetsurvey.screens.viewmodel.WelcomeViewModelFactory
 

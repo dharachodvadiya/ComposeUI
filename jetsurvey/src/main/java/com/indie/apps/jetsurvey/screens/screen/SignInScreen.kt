@@ -1,4 +1,4 @@
-package com.indie.apps.jetsurvey.screens.auth
+package com.indie.apps.jetsurvey.screens.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column

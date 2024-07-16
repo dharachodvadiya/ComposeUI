@@ -1,9 +1,8 @@
-package com.indie.apps.jetsurvey.screens.auth
+package com.indie.apps.jetsurvey.screens.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -26,7 +25,6 @@ import com.indie.apps.jetsurvey.screens.state.EmailState
 import com.indie.apps.jetsurvey.screens.state.EmailStateSaver
 import com.indie.apps.jetsurvey.screens.common.FilledButton
 import com.indie.apps.jetsurvey.screens.common.OrSignInAsGuest
-import com.indie.apps.jetsurvey.screens.common.OutLinedButton
 import com.indie.apps.jetsurvey.screens.common.supportWideScreen
 import com.indie.apps.jetsurvey.ui.theme.ComposeUITheme
 import com.indie.apps.jetsurvey.ui.theme.stronglyDeemphasizedAlpha
