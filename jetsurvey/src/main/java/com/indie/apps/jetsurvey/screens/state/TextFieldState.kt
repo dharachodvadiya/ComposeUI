@@ -1,4 +1,4 @@
-package com.indie.apps.jetsurvey.screens.common
+package com.indie.apps.jetsurvey.screens.state
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

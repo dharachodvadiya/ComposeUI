@@ -22,10 +22,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.indie.apps.jetsurvey.R
 import com.indie.apps.jetsurvey.screens.common.Email
-import com.indie.apps.jetsurvey.screens.common.EmailState
-import com.indie.apps.jetsurvey.screens.common.EmailStateSaver
+import com.indie.apps.jetsurvey.screens.state.EmailState
+import com.indie.apps.jetsurvey.screens.state.EmailStateSaver
 import com.indie.apps.jetsurvey.screens.common.FilledButton
+import com.indie.apps.jetsurvey.screens.common.OrSignInAsGuest
 import com.indie.apps.jetsurvey.screens.common.OutLinedButton
+import com.indie.apps.jetsurvey.screens.common.supportWideScreen
 import com.indie.apps.jetsurvey.ui.theme.ComposeUITheme
 import com.indie.apps.jetsurvey.ui.theme.stronglyDeemphasizedAlpha
 
@@ -34,7 +36,7 @@ internal fun WelcomeScreen(
     onSignInSignUp: (email: String) -> Unit,
     onSignInAsGuest: () -> Unit,
 ) {
-    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+    Scaffold(modifier = Modifier.supportWideScreen()) { innerPadding ->
         Box(
             modifier = Modifier
                 .padding(innerPadding)
@@ -57,7 +59,7 @@ private fun SignInCreateAccount(
     modifier: Modifier = Modifier
 ){
     val emailState by rememberSaveable(stateSaver = EmailStateSaver) {
-        mutableStateOf(EmailState())
+        mutableStateOf(EmailState("aaa@aaa.com"))
     }
 
     Column(
@@ -89,23 +91,14 @@ private fun SignInCreateAccount(
 
         FilledButton(
             textRes = R.string.user_continue,
-            onClick = { onSubmit },
+            onClick = onSubmit ,
             modifier = Modifier.fillMaxWidth()
         )
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        Text(
-            text = stringResource(id = R.string.or),
-            style = MaterialTheme.typography.titleSmall,
-            color = MaterialTheme.colorScheme.onSurface.copy(alpha = stronglyDeemphasizedAlpha),
-            )
-
-        Spacer(modifier = Modifier.height(20.dp))
-
-        OutLinedButton(
-            textRes = R.string.sign_in_guest,
-            onClick = onSignInAsGuest,
+        OrSignInAsGuest(
+            onSignInAsGuest = onSignInAsGuest,
             modifier = Modifier.fillMaxWidth()
         )
 
