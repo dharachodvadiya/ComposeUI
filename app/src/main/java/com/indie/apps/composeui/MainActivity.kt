@@ -37,7 +37,16 @@ class MainActivity : ComponentActivity() {
                     ) {
                         Column{
                             SimpleButton("Basic Layout"){
-                                //val intent = Intent(this@MainActivity, BasicLayoutMainActivity::class.java)
+                                val intent = Intent(this@MainActivity, BasicLayoutMainActivity::class.java)
+                                startActivity(intent)
+                            }
+
+                            SimpleButton("Basic Animation"){
+                                val intent = Intent(this@MainActivity, BasicAnimationMainActivity::class.java)
+                                startActivity(intent)
+                            }
+
+                            SimpleButton("Jet Survey"){
                                 val intent = Intent(this@MainActivity, JetSurveyMainActivity::class.java)
                                 startActivity(intent)
                             }
