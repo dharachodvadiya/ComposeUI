@@ -16,11 +16,11 @@ This repository contains a collection of Jetpack Compose modules showcasing vari
  
 **Portrait Mode**:  
 
-<img src="https://github.com/user-attachments/assets/df3b4c60-b78a-4592-bcdd-8ee1d420b05c" width="270" height="600">
+<img src="https://github.com/user-attachments/assets/df3b4c60-b78a-4592-bcdd-8ee1d420b05c" width="202.5" height="450">
 
 **LandScape Mode**:
 
-<img src="https://github.com/user-attachments/assets/273f14a0-047d-4d35-8607-6968716678a1" width="600" height="270">
+<img src="https://github.com/user-attachments/assets/273f14a0-047d-4d35-8607-6968716678a1" width="450" height="202.5">
 
 ### 2. Basic Animation
 
